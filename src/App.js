@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RandomImage from "./RandomImage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        background: "#E1F8DC",
+      }}
+    >
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        Random Image Viewer
+      </h1>
+      <RandomImage />
     </div>
   );
-}
+};
 
 export default App;
